@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large model files (checkpoints)
+*.pt
+*.bin
+*.safetensors
+
+# Ignore generated CSVs but keep golden set
+results_full.csv
+reply_log.csv
+errors.csv
+
+# Keep processed data
+!1data/processed/*.csv
+!notebooks/data/*.csv
+
+# Images: ignore random large ones, keep evaluation plots
+*.jpg
+*.jpeg
+*.png
+!ResultsPics/confusion_matrix.png
+!ResultsPics/escalation_distribution.png
+!ResultsPics/reply_quality.png
+
+# Databricks artifacts
+*.dbc

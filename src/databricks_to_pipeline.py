@@ -51,4 +51,4 @@ for _, row in pandas_df.iterrows():
 results_df = pd.DataFrame(results)
 results_df.to_csv("realtime_full_pipeline_results.csv", index=False)
 
-print("✅ Real-time pipeline results saved to realtime_full_pipeline_results.csv")
+print(" Real-time pipeline results saved to realtime_full_pipeline_results.csv")

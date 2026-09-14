@@ -41,6 +41,10 @@ __pycache__/
 !1data/processed/*.csv
 !notebooks/data/*.csv
 
+# Large processed datasets remain excluded after the broad CSV exception above
+1data/processed/AmazonHelp.csv
+1data/processed/amazon_tweets.csv
+
 # -------------------------
 # Generated CSVs (exclude)
 # -------------------------

@@ -83,6 +83,22 @@ source .venv/bin/activate   # Linux/Mac
 pip install -r requirements.txt
 ```
 
+## Dataset
+- **Primary dataset:** [Customer Support on Twitter](https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter)  
+ 
+- **Golden evaluation set:** included in `notebooks/data/` (`golden_set_balanced.csv`, `golden_set_labeled.csv`).  
+- ⚠️ Large raw/processed CSVs (`twcs.csv`, `AmazonHelp.csv`, `amazon_tweets.csv`) are excluded from the repo due to GitHub size limits.  
+  Please download them from Kaggle and place under:
+  - `1data/raw/`
+  - `1data/processed/`
+---
+
+##  Evaluation
+- Golden set: `notebooks/data/golden_set_balanced.csv`  
+- Run the full pipeline to reproduce headline metrics:
+
+
+
 ## Running the Pipeline
 
 ### Baseline pipeline
@@ -103,6 +119,16 @@ python databricks_full_pipeline.py
 python visualize_results.py
 ```
 
+
+### Report
+---
+The full report is available at:
+
+report/Report.md → contains problem framing, baselines, failure analysis, misleading headline number, future work, and evaluation details.
+
+report/decision_log.md → lists 15 key design decisions with reasoning.
+
+---
 ### 🔮 Future Work
 ---
 
